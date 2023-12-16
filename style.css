@@ -1,0 +1,166 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FBFBFF;
+}
+
+header {
+  background-color: #333434;
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+}
+
+h1 {
+  margin: 0;
+}
+
+#board {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+}
+
+#lists-container {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+}
+
+.list {
+  background-color: #f4f4f4;
+  width: 300px;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px; /* Espacio entre columnas */
+}
+
+.list-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cards-container {
+  flex-grow: 1;
+  margin-bottom: 10px;
+  overflow-y: auto;
+}
+
+
+.card {
+  background-color: #e2e4e6;
+  margin-bottom: 8px;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between; /* Alinea los elementos al principio y al final del contenedor flex */
+}
+
+#new-list {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 70px;
+}
+
+#add-list,
+#list-title,
+#add-list-btn {
+  margin-bottom: 8px;
+}
+
+#list-form {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+#add-list,
+#add-list-btn {
+  background-color: #040F16;
+  color: #fff;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#add-list:hover,
+#add-list-btn:hover {
+  background-color: #FBFBFF;
+  color: #040F16;
+}
+
+#list-title {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 8px;
+}
+
+#add-list-btn {
+  font-weight: bold;
+}
+
+#add-list-btn:hover {
+  background-color: #FBFBFF;
+  color: #040F16;
+}
+
+.dragged {
+  border: 2px dashed #777;
+}
+
+.card-content {
+  flex-grow: 1; /* Hace que el contenido ocupe todo el espacio disponible */
+}
+
+.delete-card-btn {
+  background-color: #d71410;
+  color: #fff;
+  padding: 6px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 8px; /* Añade un margen entre el título y el botón de eliminar */
+}
+
+.delete-card-btn:hover {
+  background-color: #B80C09;
+}
+
+
+.list-buttons {
+  display: inline-block; /* Hace que los botones estén en línea */
+  vertical-align: bottom; /* Alinea los botones en la parte superior del contenedor */
+}
+
+.delete-list-btn,
+.add-card {
+  background-color: #0B4F6C;
+  color: #fff;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 8px; /* Añade un margen entre los botones */
+}
+
+.delete-list-btn:hover{
+  background-color: #B80C09;
+}
+.add-card:hover {
+  background-color: #2980b9;
+}
